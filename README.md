@@ -9,10 +9,7 @@ This is a working single cycle RISCV soft core that works on the RV321 Instructi
 - [Project Structure](#project-structure)
 - [Features](#features)
 - [Setup](#setup)
-- [Running the Testbench](#running-the-testbench)
-- [Helper Functions](#helper-functions)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Project Structure
 - **HDL**: Contains the Verilog source files for the RISC-V processor.
