@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1720124087" />
+    <testcase name="Single_cycle_test" classname="riscv" file="C:\Users\mubee\OneDrive\Desktop\2415842_2417152_Project\2415842_2417152_Project\Test\riscv.py" lineno="404" time="2.8276236057281494" sim_time_ns="261000" ratio_time="92303.65720220713" />
+  </testsuite>
+</testsuites>

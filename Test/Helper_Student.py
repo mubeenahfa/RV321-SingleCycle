@@ -1,0 +1,48 @@
+#Populate the below functions as in the example lines of code to print your values for debugging
+def Log_Datapath(dut,logger):
+    #Log whatever signal you want from the datapath, called before positive clock edge
+    logger.debug("************ DUT DATAPATH Signals ***************")
+    dut._log.info("Op:%s", hex(dut.my_datapath.Op.value.integer))
+    dut._log.info("Funct3:%s", hex(dut.my_datapath.Funct3.value.integer))
+    dut._log.info("Funct7:%s", hex(dut.my_datapath.Funct7.value.integer))
+    dut._log.info("Z:%s", hex(dut.my_datapath.Z.value.integer))
+    dut._log.info("IQF:%s", hex(dut.my_datapath.IQF.value.integer))
+    dut._log.info("reset:%s", hex(dut.my_datapath.reset.value.integer))
+    dut._log.info("JALR:%s", hex(dut.my_datapath.JALR.value.integer))
+    dut._log.info("AUIPC:%s", hex(dut.my_datapath.AUIPC.value.integer))
+    dut._log.info("Size:%s", hex(dut.my_datapath.Size.value.integer))
+    dut._log.info("PCSrc:%s", hex(dut.my_datapath.PCSrc.value.integer))
+    dut._log.info("ResultSrc:%s", hex(dut.my_datapath.ResultSrc.value.integer))
+    dut._log.info("MemWrite:%s", hex(dut.my_datapath.MemWrite.value.integer))
+    dut._log.info("ALUControl:%s", hex(dut.my_datapath.ALUControl.value.integer))
+    dut._log.info("ALUSrc:%s", hex(dut.my_datapath.ALUSrc.value.integer))
+    dut._log.info("ImmSrc:%s", hex(dut.my_datapath.ImmSrc.value.integer))
+    dut._log.info("RegWrite:%s", hex(dut.my_datapath.RegWrite.value.integer))
+    dut._log.info("PC_Out:%s", hex(dut.my_datapath.PC_Out.value.integer))
+    #dut._log.info("Result:%s", hex(dut.my_datapath.Result.value.integer))
+    dut._log.info("SrcA_out:%s", hex(dut.my_datapath.SrcA_out.value.integer))
+    dut._log.info("SrcB_out:%s", hex(dut.my_datapath.SrcB_out.value.integer))
+    #dut._log.info("Instruction:%s", hex(dut.my_datapath.inst.value.integer))  
+    dut._log.info("RD2_out:%s", hex(dut.my_datapath.RD2_out.value.integer))
+    dut._log.info("ALUResult_out:%s", hex(dut.my_datapath.ALUResult_out.value.integer))
+
+
+
+def Log_Controller(dut,logger):
+    #Log whatever signal you want from the controller, called before positive clock edge
+    logger.debug("************ DUT Controller Signals ***************")
+    dut._log.info("Op:%s", hex(dut.my_controller.Op.value.integer))
+    dut._log.info("Funct3:%s", hex(dut.my_controller.Funct3.value.integer))
+    dut._log.info("Funct7:%s", hex(dut.my_controller.Funct7.value.integer))
+    dut._log.info("Zero:%s", hex(dut.my_controller.Zero.value.integer))
+    dut._log.info("IQF:%s", hex(dut.my_controller.IQF.value.integer))
+    dut._log.info("JALR:%s", hex(dut.my_controller.JALR.value.integer))
+    dut._log.info("AUIPC:%s", hex(dut.my_controller.AUIPC.value.integer))
+    dut._log.info("PCSrc:%s", hex(dut.my_controller.PCSrc.value.integer))
+    dut._log.info("MemWrite:%s", hex(dut.my_controller.MemWrite.value.integer))
+    dut._log.info("ALUSrc:%s", hex(dut.my_controller.ALUSrc.value.integer))
+    dut._log.info("RegWrite:%s", hex(dut.my_controller.RegWrite.value.integer))
+    dut._log.info("Size:%s", hex(dut.my_controller.Size.value.integer))
+    dut._log.info("ALUControl:%s", hex(dut.my_controller.ALUControl.value.integer))
+    dut._log.info("ImmSrc:%s", hex(dut.my_controller.ImmSrc.value.integer))
+    dut._log.info("ResultSrc:%s", hex(dut.my_controller.ResultSrc.value.integer))
